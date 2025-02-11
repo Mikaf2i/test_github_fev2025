@@ -1,30 +1,16 @@
-playlist = {
-    'title': "Hello World",
-    'author': "Planet",
-    'songs': [
-        {
-            'song_title': "Song One",
-            'artist': ['Artist 1', 'Artist 2'],
-            'duration': 4.31,
-        },
-        {
-            'song_title': "Song Two",
-            'artist': ['Artist 1'],
-            'duration': 2.53,
-        },
-        {
-            'song_title': "Song Three",
-            'artist': ['Artist 1', 'Artist 2', 'Artist 3'],
-            'duration': 3.43,
-        }
-    ]
-}
-
-total_duration = sum(song['duration'] 
-for song in playlist['songs'])
-print(f"The total duration of the playlist is {total_duration} minutes.")
-
-
-
+family = {"rick": 43, 'beth': 13, 'morty': 5, 'summer': 8}
+def calculate_price(age):
+    if age < 3 :
+        return 0
+    elif age  > 3 and age < 12 :
+        return 10
+    else:
+        return 15
     
 
+cout_total = 0
+for name, age in family.items():
+        price = calculate_price(age)
+        print(f"{name} doit payer {price} euros")
+        cout_total += price
+print(f"la famille doit payer {cout_total} euros")
