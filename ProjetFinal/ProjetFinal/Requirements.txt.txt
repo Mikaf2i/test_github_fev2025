@@ -1,8 +1,0 @@
-streamlit
-transformers
-torch
-safetensors
-pandas
-scikit-learn
-imbalanced-learn
-psutil
